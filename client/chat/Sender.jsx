@@ -45,29 +45,28 @@ Sender = React.createClass({
               <label for="textarea1">메시지</label>
             </div>
           </div>
-          <button style={{width: '100%'}} className="btn-large waves-effect waves-light" type="submit" name="action">메시지 보내기
-            <i className="material-icons right">send</i>
-          </button>
+          <div className="row">
+            <div className="col s12">
+              <button style={{width: '100%'}} className="btn-large waves-effect waves-light" type="submit" name="action"><i className="material-icons left">send</i> 입력한 메시지 보내기</button>
+            </div>
+          </div>
         </form>
-
-        <h5>특별한 메시지 보내기</h5>
 
         <div className="row">
           <div className="col s12">
-            <div className="row">
-              {
-                _.map(SPECIAL_MESSAGES, (msg) => {
-                  return (
-                    <div className="col s4">
-                      <button style={{width: '100%', paddingLeft: '.5rem', paddingRight: '.5rem'}} className={`btn-large ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
-                        {msg.button}
-                        {/*<i className="material-icons left">{msg.icon}</i> {msg.title}*/}
+            {
+              _.map(SPECIAL_MESSAGES, (msg) => {
+                return (
+                  <div className="row">
+                    <div className="col s12">
+                      <button style={{width: '100%'}} className={`btn-large ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
+                        <i className="material-icons left">{msg.icon}</i> {msg.title}
                       </button>
                     </div>
-                  )
-                })
-              }
-            </div>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
       </div>
