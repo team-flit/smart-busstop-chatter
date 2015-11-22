@@ -50,18 +50,18 @@ Sender = React.createClass({
           </button>
         </form>
 
+        <h5>특별한 메시지 보내기</h5>
+
         <div className="row">
-          <div className="col s12">
-            <h6>특별한 메시지를 보내주세요</h6>
-          </div>
           <div className="col s12">
             <div className="row">
               {
                 _.map(SPECIAL_MESSAGES, (msg) => {
                   return (
                     <div className="col s4">
-                      <button style={{width: '100%'}} className={`btn-large ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
-                        <i className="material-icons left">{msg.icon}</i> {msg.title}
+                      <button style={{width: '100%', paddingLeft: '.5rem', paddingRight: '.5rem'}} className={`btn-large ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
+                        {msg.button}
+                        {/*<i className="material-icons left">{msg.icon}</i> {msg.title}*/}
                       </button>
                     </div>
                   )

@@ -42,11 +42,11 @@ Receiver = React.createClass({
       <div className="row">
          <div className="col s12">
            <div className={`card ${message.color}`}>
-             <div className="card-content white-text">
-               <span className="card-title">{message.title}</span>
-               <p>
-                 {message.message}
-               </p>
+              <div className="card-content white-text">
+                <span className="card-title"><i className="material-icons">{message.icon}</i> {message.title}</span>
+                <p>
+                  {message.message}
+                </p>
              </div>
              <div className="card-action">
                <a href="#" onClick={this.removeLatest} className="white-text">삭제</a>
