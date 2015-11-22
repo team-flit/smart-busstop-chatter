@@ -11,7 +11,7 @@ Receiver = React.createClass({
     }
   },
 
-  remove() {
+  removeLatest() {
     if (this.data.messages.length === 0) return alert('더이상 메시지가 없습니다.');
     Messages.remove(this.data.messages[0]._id);
   },
@@ -33,7 +33,7 @@ Receiver = React.createClass({
                  </p>
                </div>
                <div className="card-action">
-                 <a href="#" onClick={this.remove}>삭제</a>
+                 <a href="#" onClick={this.removeLatest}>삭제</a>
                </div>
              </div>
            </div>
