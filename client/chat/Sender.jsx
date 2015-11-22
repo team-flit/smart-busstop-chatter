@@ -27,8 +27,8 @@ Sender = React.createClass({
         <form onSubmit={this.onSubmit}>
           <div className="row">
             <div className="input-field col s12">
-              <textarea id="textarea1" ref="message" className="materialize-textarea" autoFocus></textarea>
-              <label for="textarea1">전달하려는 메시지를 입력해주세요</label>
+              <textarea id="textarea1" ref="message" className="materialize-textarea" placeholder="전달하려는 메시지를 입력해주세요" autoFocus></textarea>
+              <label for="textarea1">메시지</label>
             </div>
           </div>
           <button style={{width: '100%'}} className="btn-large waves-effect waves-light" type="submit" name="action">메시지 보내기
