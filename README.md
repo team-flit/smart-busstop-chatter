@@ -1,5 +1,10 @@
-# smart-busstop-chatter
-Smart Busstop with Chatting
+# Smart Busstop with Messaging
+Smart Busstop with Messaging Features
+
+# Demo
+
+- [Receiver](http://busstop-chat.meteor.com)
+- [Sender](http://busstop-chat.meteor.com/sender)
 
 # How to run Raspberry Pi with Kisok Mode
 
