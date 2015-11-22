@@ -23,7 +23,7 @@ Sender = React.createClass({
   render() {
     return (
       <div className="container">
-        <h5>메시지 보내기</h5>
+        <h4>메시지 보내기</h4>
         <form onSubmit={this.onSubmit}>
           <div className="row">
             <div className="input-field col s12">
