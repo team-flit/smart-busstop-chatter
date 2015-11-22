@@ -81,7 +81,7 @@ Receiver = React.createClass({
       : this.renderNormalMessage(message);
 
     return (
-      <div className="container" style={{marginTop: '20%', whiteSpace: 'pre'}}>
+      <div className="container" style={{marginTop: '10%', whiteSpace: 'pre'}}>
         {rendering}
       </div>
     )
