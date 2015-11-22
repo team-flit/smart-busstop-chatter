@@ -22,7 +22,7 @@ Receiver = React.createClass({
       : '메시지가 없습니다';
 
     return (
-      <div className="container" style={{marginTop: '20%'}}>
+      <div className="container" style={{marginTop: '20%', whiteSpace: 'pre'}}>
         <div className="row">
            <div className="col s12">
              <div className="card">
