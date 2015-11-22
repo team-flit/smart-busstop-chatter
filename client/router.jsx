@@ -11,28 +11,3 @@ FlowRouter.route('/', {
     ReactLayout.render(Receiver);
   }
 });
-
-
-// FlowRouter.route('/diary', {
-//   action(params) {
-//     ReactLayout.render(Diary);
-//   }
-// });
-//
-// FlowRouter.route('/diary/:shortId', {
-//   action(params) {
-//     ReactLayout.render(Diary, {shortId: params.shortId});
-//   }
-// });
-//
-// FlowRouter.route('/login', {
-//   action(params) {
-//     ReactLayout.render(Login);
-//   }
-// });
-//
-// FlowRouter.route('/profile', {
-//   action(params) {
-//     ReactLayout.render(Profile);
-//   }
-// });
