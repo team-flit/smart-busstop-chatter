@@ -23,11 +23,11 @@ Sender = React.createClass({
   render() {
     return (
       <div className="container">
-        <h1>Sender</h1>
+        <h5>메시지 보내기</h5>
         <form onSubmit={this.onSubmit}>
           <div className="row">
             <div className="input-field col s12">
-              <textarea id="textarea1" ref="message" className="materialize-textarea"></textarea>
+              <textarea id="textarea1" ref="message" className="materialize-textarea" autoFocus></textarea>
               <label for="textarea1">전달하려는 메시지를 입력해주세요</label>
             </div>
           </div>
