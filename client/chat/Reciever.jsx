@@ -43,7 +43,7 @@ Receiver = React.createClass({
          <div className="col s12">
            <div className={`card ${message.color}`}>
               <div className="card-content white-text">
-                <span className="card-title"><i className="material-icons">{message.icon}</i> {message.title}</span>
+                <span className="card-title">{/*<i className="material-icons">{msg.icon}</i>*/} {message.title}</span>
                 <p>
                   {message.message}
                 </p>

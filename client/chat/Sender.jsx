@@ -41,13 +41,13 @@ Sender = React.createClass({
         <form onSubmit={this.onSubmit}>
           <div className="row">
             <div className="input-field col s12">
-              <textarea id="textarea1" ref="message" className="materialize-textarea" placeholder="전달하려는 메시지를 입력해주세요" autoFocus></textarea>
-              <label for="textarea1">메시지</label>
+              <input id="message" ref="message" type="text" className="validate" placeholder="전달하려는 메시지를 입력해주세요" autoFocus />
+              <label for="message">메시지</label>
             </div>
           </div>
           <div className="row">
             <div className="col s12">
-              <button style={{width: '100%'}} className="btn-large waves-effect waves-light" type="submit" name="action"><i className="material-icons left">send</i> 입력한 메시지 보내기</button>
+              <button style={{width: '100%', height: '45px'}} className="btn waves-effect waves-light" type="submit" name="action"><i className="material-icons left">send</i> 입력한 메시지 보내기</button>
             </div>
           </div>
         </form>
@@ -59,7 +59,7 @@ Sender = React.createClass({
                 return (
                   <div className="row">
                     <div className="col s12">
-                      <button style={{width: '100%'}} className={`btn-large ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
+                      <button style={{width: '100%', height: '45px'}} className={`btn ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
                         <i className="material-icons left">{msg.icon}</i> {msg.title}
                       </button>
                     </div>
