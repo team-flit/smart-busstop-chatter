@@ -56,21 +56,17 @@ Sender = React.createClass({
           </div>
           <div className="col s12">
             <div className="row">
-              <div className="col s4">
-                <button style={{width: '100%'}} className="btn-large orange waves-effect waves-light" onClick={this.sendMessage.bind(this, 'STOP_SMOKING')}>
-                  <i className="material-icons left">smoke_free</i> 담배 좀 꺼주세요
-                </button>
-              </div>
-              <div className="col s4">
-                <button style={{width: '100%'}} className="btn-large red waves-effect waves-light" onClick={this.sendMessage.bind(this, 'PERVERT_ALERT')}>
-                  <i className="material-icons left">report</i> 치한이 있어요
-                </button>
-              </div>
-              <div className="col s4">
-                <button style={{width: '100%'}} className="btn-large indigo waves-effect waves-light" onClick={this.sendMessage.bind(this, 'NEED_YOUR_HELP')}>
-                  <i className="material-icons left">live_help</i> 도움이 필요해요
-                </button>
-              </div>
+              {
+                _.map(SPECIAL_MESSAGES, (msg) => {
+                  return (
+                    <div className="col s4">
+                      <button style={{width: '100%'}} className={`btn-large ${msg.color} waves-effect waves-light`} onClick={this.sendMessage.bind(this, msg.key)}>
+                        <i className="material-icons left">{msg.icon}</i> {msg.title}
+                      </button>
+                    </div>
+                  )
+                })
+              }
             </div>
           </div>
         </div>
